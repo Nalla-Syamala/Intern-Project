@@ -1,0 +1,114 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <title>Complaint Portal</title>
+
+    <script>
+        function myfun() {
+            var guidebutton = document.getElementById("butn");
+            var guidelines = document.getElementById('guidelines');
+            if (guidebutton.value == "Guidelines") {
+
+                guidelines.style.display = 'block';
+                guidebutton.value = ' HideGuidelines';
+            } else if (guidebutton.value == " HideGuidelines") {
+
+                guidelines.style.display = 'none';
+                guidebutton.value = 'Guidelines';
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <nav class="navbar-nav navbar-expand-sm bg-dark">
+        <div class="nav-item item1" style="margin-left:5%">
+            <h2 onclick='window.location.reload();' style="cursor:pointer">TELEPHONE COMPLAINT PORTAL</h2>
+        </div>
+        <div class="nav-item items">
+            <a class="nav-link" href="userlogin1.html">USER LOGIN</a>
+        </div>
+        <div class="nav-item items">
+            <a class="nav-link" href="userreg1.html">USER REGISTRATION</a>
+        </div>
+        <div class="nav-item items">
+            <a class="nav-link" href="adminlogin1.html">ADMIN LOGIN</a>
+        </div>
+    </nav>
+
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <img src="Ongc.jpg" alt=" Los Angeles" width="1100" height="500 ">
+            </div>
+            <div class="carousel-item ">
+                <img src="customer-service.jpg" alt="Chicago" width="1100" height="500 ">
+            </div>
+            <div class="carousel-item ">
+                <img src="ongc2.jpg" alt="New York" width="1100" height="500 ">
+            </div>
+        </div>
+
+
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon "></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon "></span>
+        </a>
+    </div>
+
+
+    <div class="welcome container">
+        <h3>Welcome To ONGC Online Complaint System</h3>
+
+
+        <div class="guide">
+
+            <input type="button" class="btn btn-light form-control" onClick="myfun()" id="butn" value="Guidelines">
+
+            <div id="guidelines" style="display:none ">
+                <ul class="list-group list-group-flush ">
+                    <li class="list-group-item list-group-item-dark ">
+                        Registeration <a href="userreg1.html ">USER REGISTRATION</a>
+                    </li>
+                    <li class="list-group-item list-group-item-dark ">
+                        After Registeration Login <a href="userlogin1.html ">USER LOGIN</a>
+                    </li>
+                    <li class="list-group-item list-group-item-dark ">
+                        List Out your Complaints and Submit
+                    </li>
+
+                    <li class="list-group-item list-group-item-dark ">
+                        Track your Complaint Status
+                    </li>
+                    <li class="list-group-item list-group-item-dark ">
+                        Logout
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <br />
+    <hr />
+
+
+</body>
+
+</html>
